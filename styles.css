@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.screen_xxl {
+    /* max-width: 1196px; */
+    width: 100vw;
+}
+
+
+/* Angled gradient */
+.nav_hero {
+    background: 
+      linear-gradient(180deg, rgba(9, 1, 0, 0.7), rgba(9, 0, 0, 0.7)),
+      url('images/DE-en-20240708-POP_SIGNUP_TWO_WEEKS-perspective_WEB_e77979a8-96b4-45ce-b558-a8ac53b39edb_large.jpg');
+    background-size: fill;
+    background-position: center;
+    height: 500px;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    margin-block: 1rem 10rem;
+}
+
+.hero {
+    display: grid;
+    place-items: center;
+    color: white;
+    gap: 1rem;
+    text-align: center;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; */
+}
+
+.hero button {
+    background-color: rgb(216, 11, 11);
+    color: white;
+    border-radius: .2rem;
+    border: 1px solid black;
+    padding: 1em 1.6em;
+    font-size: 12px;
+}
+
+.xxxl {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.xxl {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+nav img {
+    height: 36px;
+}
+
+
+.nav_hero {
+    border-bottom: 8px solid #282727;
+}
+hr {
+    border: 5px solid #282727;
+}
+
+button {
+    background-color: rgb(216, 11, 11);
+    color: white;
+    border-radius: .2rem;
+    border: 1px solid black;
+    padding: .4em .8em;
+}
+
+button:hover {
+    background-color: rgb(136, 12, 12);
+}
+
+.hero input {
+    background: rgba(21, 244, 244, 0.1); 
+    width: 200px;
+    border: 1px solid green;
+    padding: 1em;
+    font-size: 12px;
+    color: white;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-inline: auto;
+    padding-block: 6rem;
+}
+
+.block .image {
+    position: relative;
+    z-index: 20;
+    width: 80%;
+}
+
+.screen {
+    position: absolute;
+    width: 68%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    top: 22%;
+    left: 16%;
+    z-index: 1;
+}
+
+.screen video {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* .faq_section {
+    display: grid;
+    margin: auto;
+    gap: 2rem;
+    padding-block: 6rem;
+    h1 {
+        text-align: center;
+    }
+}
+
+#faq_section {
+    display: grid;
+    gap: .2rem;
+}
+
+.faq_hero {
+    margin-top: 2rem;
+}
+
+.q_a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.question {
+    display: block;
+    position: relative;
+    margin-bottom: .1rem;
+    span {
+        position: absolute;
+        right: 1rem;
+    }
+}
+.question:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+.question, .answer {
+    background-color: rgb(63, 60, 60);
+    padding: 1rem;
+    width: 100%;
+}
+.answer {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s, max-height 2s;
+}
+
+.answer.show {
+    display: block;
+    opacity: 1;
+    max-height: 1000px; /* Arbitrary large value to ensure it slides in fully */
+    margin-bottom: .1rem;
+} */
+
+footer {
+    padding-block: 6rem;
+    margin-inline: auto;
+}
+
+.grid_4_2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-inline: auto;
+    text-decoration: underline;
+    ul {
+        list-style: none;
+    }
+}
+
+  
+  @media (max-width: 1200px) {
+    .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        text-align: center;
+    }
+    .screen {
+        position: absolute;
+        width: 70%;
+        top: 20%;
+        left: 16%;
+        z-index: 1;
+    }
+
+    .faq_section {
+        width: calc(100% - 4rem);
+    }
+    .screen_xxl {
+        width: calc(100% - 4rem);
+    }
+  }
