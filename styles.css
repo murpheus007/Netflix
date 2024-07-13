@@ -17,7 +17,7 @@ body {
 }
 
 .screen_xxl {
-    /* max-width: 1196px; */
+    max-width: 1196px;
     width: 100vw;
 }
 
@@ -121,8 +121,8 @@ button:hover {
 
 .screen {
     position: absolute;
-    width: 68%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 68%; 
+    /* height: auto; */
     top: 22%;
     left: 16%;
     z-index: 1;
@@ -133,7 +133,7 @@ button:hover {
     height: auto; /* Maintain aspect ratio */
 }
 
-/* .faq_section {
+.faq_section {
     display: grid;
     margin: auto;
     gap: 2rem;
@@ -188,7 +188,7 @@ button:hover {
     opacity: 1;
     max-height: 1000px; /* Arbitrary large value to ensure it slides in fully */
     margin-bottom: .1rem;
-} */
+}
 
 footer {
     padding-block: 6rem;
@@ -214,6 +214,11 @@ footer {
         justify-content: center;
         margin-inline: auto;
         text-align: center;
+    }
+
+    .block .image img {
+        width: 100%;
+        inline-size: 100%;
     }
     .screen {
         position: absolute;
